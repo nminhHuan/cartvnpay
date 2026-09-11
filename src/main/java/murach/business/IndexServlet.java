@@ -7,11 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Controller cho trang chủ (CD list).
- * Chịu trách nhiệm lấy danh sách sản phẩm rồi chuyển (forward) sang view.
- * index.jsp KHÔNG chứa code Java, chỉ hiển thị dữ liệu servlet đưa vào.
- */
 @WebServlet("/index")
 public class IndexServlet extends HttpServlet {
 

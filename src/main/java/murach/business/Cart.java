@@ -18,9 +18,6 @@ public class Cart implements Serializable {
         return items.size();
     }
 
-    // Dùng cho nút "Add To Cart" ở trang Index.
-    // Nếu sản phẩm đã có trong giỏ thì CỘNG DỒN số lượng,
-    // nếu chưa có thì thêm mới vào giỏ.
     public void addItem(LineItem itemToAdd) {
         String code = itemToAdd.getProduct().getCode();
         for (LineItem item : items) {
@@ -32,9 +29,6 @@ public class Cart implements Serializable {
         items.add(itemToAdd);
     }
 
-    // Dùng cho nút "Update" ở trang Cart.
-    // GÁN LẠI (ghi đè) số lượng đúng bằng số người dùng nhập.
-    // Nếu số lượng <= 0 thì xóa luôn sản phẩm khỏi giỏ.
     public void updateItem(String productCode, int quantity) {
         for (int i = 0; i < items.size(); i++) {
             LineItem item = items.get(i);
@@ -49,7 +43,6 @@ public class Cart implements Serializable {
         }
     }
 
-    // Dùng cho nút "Remove Item" ở trang Cart.
     public void removeItem(String productCode) {
         for (int i = 0; i < items.size(); i++) {
             LineItem item = items.get(i);

@@ -11,7 +11,6 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/cart")
 public class CartServlet extends HttpServlet {
 
-    // View (.jsp) nằm trực tiếp trong webapp.
     private static final String VIEWS = "/";
 
     @Override
