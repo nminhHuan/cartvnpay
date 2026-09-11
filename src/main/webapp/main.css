@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #008080;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+form {
+    display: inline;
+    margin: 0;
+}
+
+input[type="submit"] {
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 40px;
+}
