@@ -11,16 +11,16 @@ public class ProductDB {
         p.setCode(productCode);
         if (productCode.equals("8601")) {
             p.setDescription("86 (the band) - True Life Songs and Pictures");
-            p.setPrice(14.95);
+            p.setPrice(150000);
         } else if (productCode.equals("pf01")) {
             p.setDescription("Paddlefoot - The first CD");
-            p.setPrice(12.95);
+            p.setPrice(130000);
         } else if (productCode.equals("pf02")) {
             p.setDescription("Paddlefoot - The second CD");
-            p.setPrice(14.95);
+            p.setPrice(150000);
         } else if (productCode.equals("jr01")) {
             p.setDescription("Joe Rut - Genuine Wood Grained Finish");
-            p.setPrice(14.95);
+            p.setPrice(150000);
         } else {
             return null;
         }

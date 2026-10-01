@@ -53,6 +53,12 @@ public class Cart implements Serializable {
         }
     }
 
+    public String getTotalCurrencyFormat() {
+        return java.text.NumberFormat
+                .getCurrencyInstance(new java.util.Locale("vi", "VN"))
+                .format(getTotal());
+    }
+
     public double getTotal() {
         double total = 0.0;
         for (LineItem item : items) {

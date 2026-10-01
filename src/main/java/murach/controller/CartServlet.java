@@ -1,4 +1,9 @@
-package murach.business;
+package murach.controller;
+
+import murach.business.Cart;
+import murach.business.LineItem;
+import murach.business.Product;
+import murach.business.ProductDB;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

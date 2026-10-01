@@ -46,6 +46,10 @@
                         </td>
                     </tr>
                 </c:forEach>
+                <tr>
+                    <td colspan="3"><b>Total</b></td>
+                    <td colspan="2"><b>${cart.totalCurrencyFormat}</b></td>
+                </tr>
             </table>
         </c:otherwise>
     </c:choose>

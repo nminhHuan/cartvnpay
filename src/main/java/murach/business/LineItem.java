@@ -2,6 +2,7 @@ package murach.business;
 
 import java.io.Serializable;
 import java.text.NumberFormat;
+import java.util.Locale;
 
 public class LineItem implements Serializable {
     private Product product;
@@ -20,7 +21,7 @@ public class LineItem implements Serializable {
     }
 
     public String getTotalCurrencyFormat() {
-        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        NumberFormat currency = NumberFormat.getCurrencyInstance(new Locale("vi", "VN"));
         return currency.format(this.getTotal());
     }
 }
